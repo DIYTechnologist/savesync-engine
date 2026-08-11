@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"savesync-engine/engine"
-	"savesync-engine/gvas"
+	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/gvas"
 )
 
 // cleanTail is the None\0 property-map terminator the gate's tail check

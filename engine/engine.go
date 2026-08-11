@@ -9,7 +9,7 @@ package engine
 import (
 	"encoding/json"
 
-	"savesync-engine/gameapi"
+	"github.com/DIYTechnologist/savesync-engine/gameapi"
 )
 
 // Tier classifies a portability check's failure severity.

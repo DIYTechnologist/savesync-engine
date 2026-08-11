@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"savesync-engine/engine"
-	"savesync-engine/gameapi"
+	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/gameapi"
 )
 
 func TestInspectPortableWithRequiredMembers(t *testing.T) {

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"savesync-engine/gameapi"
-	re "savesync-engine/reengine"
+	"github.com/DIYTechnologist/savesync-engine/gameapi"
+	re "github.com/DIYTechnologist/savesync-engine/reengine"
 )
 
 const prefix = "sdimg_SAVESERVICE-LINE-0-"

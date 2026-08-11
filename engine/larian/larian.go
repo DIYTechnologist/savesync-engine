@@ -28,9 +28,9 @@ import (
 	"regexp"
 	"strings"
 
-	"savesync-engine/engine"
-	"savesync-engine/gameapi"
-	"savesync-engine/util"
+	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/gameapi"
+	"github.com/DIYTechnologist/savesync-engine/util"
 )
 
 // ImageConfig describes one Garlic save image this game needs. Every

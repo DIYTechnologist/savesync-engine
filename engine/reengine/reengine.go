@@ -27,10 +27,10 @@ import (
 	"strconv"
 	"strings"
 
-	"savesync-engine/engine"
-	"savesync-engine/gameapi"
-	re "savesync-engine/reengine"
-	"savesync-engine/util"
+	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/gameapi"
+	re "github.com/DIYTechnologist/savesync-engine/reengine"
+	"github.com/DIYTechnologist/savesync-engine/util"
 )
 
 // ImageConfig describes the single save image a RE Engine profile needs.

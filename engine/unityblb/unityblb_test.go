@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"testing"
 
-	"savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/engine"
 )
 
 func testConfig() Config {

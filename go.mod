@@ -1,4 +1,4 @@
-module savesync-engine
+module github.com/DIYTechnologist/savesync-engine
 
 go 1.26.5
 

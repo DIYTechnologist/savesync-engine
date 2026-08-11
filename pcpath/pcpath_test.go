@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"savesync-engine/ludusavi"
+	"github.com/DIYTechnologist/savesync-engine/ludusavi"
 )
 
 func TestExpandTemplateResolvesLocalAppData(t *testing.T) {

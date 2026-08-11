@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"savesync-engine/engine"
-	"savesync-engine/gameapi"
-	re "savesync-engine/reengine"
+	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/gameapi"
+	re "github.com/DIYTechnologist/savesync-engine/reengine"
 )
 
 const re4Prefix = "sdimg_SAVESERVICE-LINE-0-"

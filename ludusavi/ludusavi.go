@@ -26,7 +26,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"savesync-engine/util"
+	"github.com/DIYTechnologist/savesync-engine/util"
 )
 
 // ManifestURL is ludusavi-manifest's generated, always-current manifest.
@@ -100,7 +100,7 @@ func DefaultCachePath() string {
 	if err != nil || dir == "" {
 		dir = os.TempDir()
 	}
-	return filepath.Join(dir, "savesync-engine", "ludusavi-manifest.yaml")
+	return filepath.Join(dir, "github.com/DIYTechnologist/savesync-engine", "ludusavi-manifest.yaml")
 }
 
 func readOrFetch(cachePath string, maxAge, timeout time.Duration) ([]byte, error) {

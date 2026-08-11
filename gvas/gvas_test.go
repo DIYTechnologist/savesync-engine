@@ -6,7 +6,7 @@ import (
 	"math"
 	"testing"
 
-	"savesync-engine/gvas"
+	"github.com/DIYTechnologist/savesync-engine/gvas"
 )
 
 func fstring(value string) []byte {

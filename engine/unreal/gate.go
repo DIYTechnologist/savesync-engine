@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"savesync-engine/engine"
-	"savesync-engine/gvas"
+	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/gvas"
 )
 
 // Override tokens for --allow. Each names exactly one tier-2 check; there

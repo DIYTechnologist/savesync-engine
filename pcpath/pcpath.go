@@ -19,7 +19,7 @@ import (
 	"runtime"
 	"strings"
 
-	"savesync-engine/ludusavi"
+	"github.com/DIYTechnologist/savesync-engine/ludusavi"
 )
 
 // Candidate is one suggested PC save directory.

@@ -9,13 +9,13 @@ import (
 	"sort"
 	"strings"
 
-	"savesync-engine/engine"
-	"savesync-engine/engine/larian"
-	"savesync-engine/engine/reengine"
-	"savesync-engine/engine/unityblb"
-	"savesync-engine/engine/unreal"
-	"savesync-engine/gameapi"
-	"savesync-engine/util"
+	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/engine/larian"
+	"github.com/DIYTechnologist/savesync-engine/engine/reengine"
+	"github.com/DIYTechnologist/savesync-engine/engine/unityblb"
+	"github.com/DIYTechnologist/savesync-engine/engine/unreal"
+	"github.com/DIYTechnologist/savesync-engine/gameapi"
+	"github.com/DIYTechnologist/savesync-engine/util"
 )
 
 // DefaultGamesDir is the on-disk override/extension directory checked in
