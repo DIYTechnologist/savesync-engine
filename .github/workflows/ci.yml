@@ -40,10 +40,18 @@ jobs:
       - name: Build
         run: go build ./...
 
-      - name: Create timestamp tag
+      # savesyncpspc's own CI uses a bare "YYYY.MMDD.HHMMSS" timestamp tag,
+      # which is fine there (those tags label release *artifacts*, never
+      # consumed by `go get`). This module is consumed via `go get`/`go.mod`
+      # `require`, which mandates real semver (`vMAJOR.MINOR.PATCH`) - a
+      # non-semver tag resolves for humans on GitHub but `go get` can't use
+      # it. v0.0.<unix-seconds> keeps the same "just tag every push to
+      # main, no manual versioning yet" intent, monotonically increasing,
+      # while actually being a tag `go get` can consume.
+      - name: Create version tag
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          tag="$(date -u +'%Y.%m%d.%H%M%S')"
+          tag="v0.0.$(date -u +%s)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git tag "$tag" "$GITHUB_SHA"
