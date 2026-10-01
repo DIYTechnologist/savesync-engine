@@ -1,0 +1,43 @@
+{
+  "game": "007firstlight",
+  "name": "007 First Light",
+  "ids": [
+    {
+      "id": "PPSA11386"
+    }
+  ],
+  "pc_save_dirs": {
+    "windows": "C:\\Program Files (x86)\\Steam\\userdata",
+    "linux": "~/.local/share/Steam/userdata"
+  },
+  "steam_app_id": "3768760",
+  "engine": "glacier",
+  "engine_config": {
+    "slots": [
+      {
+        "logical": "slot0",
+        "label": "Save Slot 1",
+        "save_name": "sdimg_KntSlotSaveFile-0",
+        "pc_dir": "kntslotsavefile-0"
+      },
+      {
+        "logical": "profile",
+        "label": "Profile",
+        "save_name": "sdimg_KntProfileSaveFile",
+        "pc_dir": "kntprofilesavefile"
+      },
+      {
+        "logical": "profile-bck0",
+        "label": "Profile Backup 1",
+        "save_name": "sdimg_KntProfileSaveFile-BCK-0",
+        "pc_dir": "kntprofilesavefile-bck-0"
+      },
+      {
+        "logical": "profile-bck1",
+        "label": "Profile Backup 2",
+        "save_name": "sdimg_KntProfileSaveFile-BCK-1",
+        "pc_dir": "kntprofilesavefile-bck-1"
+      }
+    ]
+  }
+}

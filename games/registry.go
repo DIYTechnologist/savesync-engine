@@ -10,6 +10,7 @@ import (
 	"strings"
 
 	"github.com/DIYTechnologist/savesync-engine/engine"
+	"github.com/DIYTechnologist/savesync-engine/engine/glacier"
 	"github.com/DIYTechnologist/savesync-engine/engine/larian"
 	"github.com/DIYTechnologist/savesync-engine/engine/reengine"
 	"github.com/DIYTechnologist/savesync-engine/engine/unityblb"
@@ -31,6 +32,7 @@ func init() {
 	engine.Register(larian.New())
 	engine.Register(reengine.New())
 	engine.Register(unityblb.New())
+	engine.Register(glacier.New())
 }
 
 type metadata struct {

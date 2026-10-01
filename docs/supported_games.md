@@ -108,8 +108,23 @@ More details:
 
 - [Subnautica notes](subnautica.md#below-zero)
 
+## 007 First Light
+
+- Game key: `007firstlight`
+- Engine: `glacier` (IO Interactive Glacier: XOR-obfuscated `index.save` + zlib `data.save`)
+- PS5 title ID: `PPSA11386`
+- PC target: Steam (app ID `3768760`)
+- PC save directory: Steam Cloud's `<Steam>/userdata/<account-id>/3768760/remote` (Windows: `C:\Program Files (x86)\Steam\userdata\...`, Linux: `~/.local/share/Steam/userdata/...`) - pass that `remote` folder as `--pc-dir`
+- Needs `--steam-id` in both directions: Steam saves are encrypted with the account's SteamID64
+- Converts save slot 0 plus the profile and its two backups; the PS5 slot images must already exist (save once in-game on the console first)
+- PC->PS5 confirmed loading in-game; PS5->PC verified byte-identical against a real Steam save but not yet loaded in-game
+
+More details:
+
+- [007 First Light format notes](007firstlight.md)
+
 ## Adding Support
 
-New games are metadata only: a `games/<key>.json` profile naming an existing engine (`unreal`, `larian`, `reengine`, or `unityblb`) and that engine's config - no per-game Go code needed. A genuinely new save format needs a new `engine/<name>` package implementing `engine.Engine`.
+New games are metadata only: a `games/<key>.json` profile naming an existing engine (`unreal`, `larian`, `reengine`, `unityblb`, or `glacier`) and that engine's config - no per-game Go code needed. A genuinely new save format needs a new `engine/<name>` package implementing `engine.Engine`.
 
 See [Development Notes](dev.md) for implementation details. CLI-side workflow (Garlic transport, backups, `--apply`) lives in [`savesyncpspc`](https://github.com/DIYTechnologist/SaveSyncPSPC), the CLI that consumes this engine module.

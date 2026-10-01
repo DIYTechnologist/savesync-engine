@@ -228,6 +228,13 @@ Both directions of Requiem are now confirmed in-game.
 
 **Remaining limitation (not a bug):** the PS5 cannot receive a save into a slot whose container doesn't exist - nothing here can create a savedata container, only the game can. A PC slot with no matching PS5 container must either be retargeted into an existing slot (proven to work, see above) or have a container made by saving once in-game on the console.
 
+## 007 First Light (`007firstlight`, engine `glacier`)
+
+| Direction | Format-level | Live dry-run | Live applied + in-game |
+|---|---|---|---|
+| PC → PS5 | ✅ synthetic round-trip tests; real Steam save decodes and decompresses for every slot | ✅ CLI output byte-identical to the manually converted files that loaded in-game | ✅ manual recipe (same bytes as the CLI produces) - slot 0 + profile loaded correctly, PC 1.1.0 save on PS5 1.1.1 (2026-10-02) |
+| PS5 → PC | ✅ | ✅ CLI output byte-identical to the real Steam save files | ⬜ |
+
 ## Summary: what a live test session would need to cover
 
 In rough order of how close each already is:
